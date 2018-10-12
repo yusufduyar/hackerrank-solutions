@@ -5,7 +5,6 @@ class Solution
     gary_is_in_valley = false
 
     number_of_steps.times do |i|
-
       height_from_sea -= 1 if path[i] == 'D'
       height_from_sea += 1 if path[i] == 'U'
 
@@ -14,10 +13,7 @@ class Solution
         total_valley_count += 1
         gary_is_in_valley = false
       end
-
-      puts " PATH = #{path[i]} , HEIGHT = #{height_from_sea}, INVALLEY = #{gary_is_in_valley}, COUNT = #{total_valley_count}"
     end
-
     total_valley_count
   end
 end
